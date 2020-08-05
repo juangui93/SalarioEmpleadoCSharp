@@ -51,5 +51,13 @@ namespace SalarioEmpleado
             gbxResumen.Visible = true; 
 
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtHoras.Text = String.Empty;
+            txtValor.Text = String.Empty;
+            gbxResumen.Visible = false;
+            txtHoras.Focus();
+        }
     }
 }

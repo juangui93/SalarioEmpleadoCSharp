@@ -32,17 +32,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.gbxResumen = new System.Windows.Forms.GroupBox();
+            this.lblSalarioNeto = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblIncremento = new System.Windows.Forms.Label();
+            this.lblPagoSalud = new System.Windows.Forms.Label();
+            this.lblSalarioBase = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtHoras = new System.Windows.Forms.TextBox();
             this.txtValor = new System.Windows.Forms.TextBox();
             this.btnCalcular = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblSalarioBase = new System.Windows.Forms.Label();
-            this.lblPagoSalud = new System.Windows.Forms.Label();
-            this.lblIncremento = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.lblSalarioNeto = new System.Windows.Forms.Label();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.gbxResumen.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,6 +96,86 @@
             this.gbxResumen.Text = "Resumen de Pago";
             this.gbxResumen.Visible = false;
             // 
+            // lblSalarioNeto
+            // 
+            this.lblSalarioNeto.AutoSize = true;
+            this.lblSalarioNeto.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalarioNeto.Location = new System.Drawing.Point(513, 107);
+            this.lblSalarioNeto.Name = "lblSalarioNeto";
+            this.lblSalarioNeto.Size = new System.Drawing.Size(21, 22);
+            this.lblSalarioNeto.TabIndex = 14;
+            this.lblSalarioNeto.Text = "0";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(361, 107);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(146, 22);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "Salario a pagar: ";
+            // 
+            // lblIncremento
+            // 
+            this.lblIncremento.AutoSize = true;
+            this.lblIncremento.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIncremento.Location = new System.Drawing.Point(139, 107);
+            this.lblIncremento.Name = "lblIncremento";
+            this.lblIncremento.Size = new System.Drawing.Size(21, 22);
+            this.lblIncremento.TabIndex = 12;
+            this.lblIncremento.Text = "0";
+            // 
+            // lblPagoSalud
+            // 
+            this.lblPagoSalud.AutoSize = true;
+            this.lblPagoSalud.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPagoSalud.Location = new System.Drawing.Point(139, 74);
+            this.lblPagoSalud.Name = "lblPagoSalud";
+            this.lblPagoSalud.Size = new System.Drawing.Size(21, 22);
+            this.lblPagoSalud.TabIndex = 11;
+            this.lblPagoSalud.Text = "0";
+            // 
+            // lblSalarioBase
+            // 
+            this.lblSalarioBase.AutoSize = true;
+            this.lblSalarioBase.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalarioBase.Location = new System.Drawing.Point(139, 35);
+            this.lblSalarioBase.Name = "lblSalarioBase";
+            this.lblSalarioBase.Size = new System.Drawing.Size(21, 22);
+            this.lblSalarioBase.TabIndex = 10;
+            this.lblSalarioBase.Text = "0";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(6, 107);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(111, 22);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Incremento:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 74);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(113, 22);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Pago Salud:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 35);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(127, 22);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Salario Base: ";
+            // 
             // txtHoras
             // 
             this.txtHoras.Location = new System.Drawing.Point(386, 60);
@@ -119,91 +200,22 @@
             this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
-            // label4
+            // btnLimpiar
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 35);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 22);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Salario Base: ";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 74);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 22);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Pago Salud:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 107);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 22);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Incremento:";
-            // 
-            // lblSalarioBase
-            // 
-            this.lblSalarioBase.AutoSize = true;
-            this.lblSalarioBase.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalarioBase.Location = new System.Drawing.Point(139, 35);
-            this.lblSalarioBase.Name = "lblSalarioBase";
-            this.lblSalarioBase.Size = new System.Drawing.Size(21, 22);
-            this.lblSalarioBase.TabIndex = 10;
-            this.lblSalarioBase.Text = "0";
-            // 
-            // lblPagoSalud
-            // 
-            this.lblPagoSalud.AutoSize = true;
-            this.lblPagoSalud.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPagoSalud.Location = new System.Drawing.Point(139, 74);
-            this.lblPagoSalud.Name = "lblPagoSalud";
-            this.lblPagoSalud.Size = new System.Drawing.Size(21, 22);
-            this.lblPagoSalud.TabIndex = 11;
-            this.lblPagoSalud.Text = "0";
-            // 
-            // lblIncremento
-            // 
-            this.lblIncremento.AutoSize = true;
-            this.lblIncremento.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIncremento.Location = new System.Drawing.Point(139, 107);
-            this.lblIncremento.Name = "lblIncremento";
-            this.lblIncremento.Size = new System.Drawing.Size(21, 22);
-            this.lblIncremento.TabIndex = 12;
-            this.lblIncremento.Text = "0";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(361, 107);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(146, 22);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "Salario a pagar: ";
-            // 
-            // lblSalarioNeto
-            // 
-            this.lblSalarioNeto.AutoSize = true;
-            this.lblSalarioNeto.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalarioNeto.Location = new System.Drawing.Point(513, 107);
-            this.lblSalarioNeto.Name = "lblSalarioNeto";
-            this.lblSalarioNeto.Size = new System.Drawing.Size(21, 22);
-            this.lblSalarioNeto.TabIndex = 14;
-            this.lblSalarioNeto.Text = "0";
+            this.btnLimpiar.Location = new System.Drawing.Point(685, 56);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(78, 60);
+            this.btnLimpiar.TabIndex = 7;
+            this.btnLimpiar.Text = "Limpiar Campos";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.txtHoras);
@@ -237,6 +249,7 @@
         private System.Windows.Forms.TextBox txtHoras;
         private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
 
