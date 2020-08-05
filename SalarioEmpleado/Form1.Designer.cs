@@ -44,6 +44,8 @@
             this.txtValor = new System.Windows.Forms.TextBox();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.cbxEmpleadoAdm = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.gbxResumen.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -210,11 +212,34 @@
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
+            // cbxEmpleadoAdm
+            // 
+            this.cbxEmpleadoAdm.FormattingEnabled = true;
+            this.cbxEmpleadoAdm.Items.AddRange(new object[] {
+            "No",
+            "Si"});
+            this.cbxEmpleadoAdm.Location = new System.Drawing.Point(274, 135);
+            this.cbxEmpleadoAdm.Name = "cbxEmpleadoAdm";
+            this.cbxEmpleadoAdm.Size = new System.Drawing.Size(132, 21);
+            this.cbxEmpleadoAdm.TabIndex = 8;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(28, 134);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(240, 22);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "¿Empleado administrativo?";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.cbxEmpleadoAdm);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtValor);
@@ -225,6 +250,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Cálculo de salario de empleado";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.gbxResumen.ResumeLayout(false);
             this.gbxResumen.PerformLayout();
             this.ResumeLayout(false);
@@ -250,6 +276,8 @@
         private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.ComboBox cbxEmpleadoAdm;
+        private System.Windows.Forms.Label label7;
     }
 }
 
